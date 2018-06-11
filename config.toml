@@ -1,0 +1,4 @@
+baseURL = "https://pema.guru/"
+languageCode = "en-us"
+title = "Pema Dudul"
+theme = "pema"

@@ -7,12 +7,28 @@ public_folder: "img"
 
 collections:
   - name: homepage
-    title: Homepage
+    label: Homepage
     files:
       - file: data/events.yml
         name: events
         label: Event
         fields:
-          - label: Title
-            name: title
-            widget: string
+          - label: Events
+            name: events
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: When
+                name: when
+                widget: string
+              - label: Where
+                name: where
+                widget: string
+              - label: Type
+                name: type
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown

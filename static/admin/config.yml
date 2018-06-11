@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: voldmar/pema
-  branch: master # Branch to update (optional; defaults to master)
+
 media_folder: "static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
@@ -11,10 +11,10 @@ collections:
     files:
       - file: data/events.yml
         name: events
-        label: Event
+        label: Events
         fields:
-          - label: Events
-            name: events
+          - label: Event
+            name: event
             widget: list
             fields:
               - label: Title
@@ -28,6 +28,9 @@ collections:
                 widget: string
               - label: Type
                 name: type
+                widget: string
+              - label: Registration
+                name: registration
                 widget: string
               - label: Description
                 name: description
